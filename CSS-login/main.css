@@ -9,6 +9,7 @@ body{
 
 /* modal dimensions */
 #sign-in {
+    /* dimensions */
     margin: 10% auto;
     width: 500px;
     height: 540px;
@@ -43,12 +44,14 @@ body{
     height: 39px;
 }
 
+/* login image */
 #sing_in_img {
     margin: 20px 25%;
     width: 249px;
     height: 150px;  
 }
 
+/* form styles */
 .form-group {
     margin: 23px 73px 30px 60px;
 }
@@ -129,6 +132,7 @@ body{
     color: #006af5;
 }
 
+/* placeholder text styles */
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     /* Paragraph - 16 (1em) */
 
@@ -187,4 +191,49 @@ body{
     color: #737581;color: pink;
 } 
 
+/* ******************************
+            Tablet CSS
+****************************** */
+
+@media screen and (max-width: 768px) {
+/* screen looks good for tablet as is */
+}
+
+
+/* ******************************
+            Mobile CSS
+****************************** */
+
+@media screen and (max-width: 490px) {
+    #sign-in{
+    /* dimensions */
+        margin: 10% auto;
+        width: 88%;
+        height: 600px;
+    }
+
+    #sing_in_img {
+        margin: 20px 18%;
+        width: 65.5%;
+        height: 25.5%; 
+    }
+
+    .login-inputs {        
+        width: 80%;
+    }
+
+    .form-group {
+        margin: 17% 2% 8% 3%;
+    }
+
+    #login-button {
+        margin: 0% 30%;
+    }
+
+    #forgot-pass {
+        top: 3%;
+        margin: 0 -3%;
+    }
+
+}
 
