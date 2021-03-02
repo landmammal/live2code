@@ -16,11 +16,9 @@ body{
 }
 
 .nav-logo {
-    padding-right: 1%;;
-    float: left;
-    /* width: 7.6%; */
+    float: left;    
     height: 100%;
-    /* display: inline-block; */
+    padding-right: 1%;;
     background: #4ABDF0;
 }
 
@@ -30,11 +28,9 @@ body{
 }
 
 
-.triangle{
-    /* display: inline-block; */
+.triangle{    
     width: 0;
     height: 0;
-    /* margin: 0 auto; */
     background: transparent;
     border-top: 20px solid #EE7C31;
     border-left: 20px solid #4ABDF0; 
@@ -46,20 +42,13 @@ body{
 }
 
 #first-separator{
-    background-color: #1D84D7;
-    /* position: absolute; */
-    float: left;
-    /* margin-left: -1%; */
+    background-color: #1D84D7;    
+    float: left;    
     z-index: 1;
-    /* left: 7%; */
-    /* border-left: 20px solid #4ABDF0;  */
 }
 
 #second-separator{
     float: left;
-    /* position: absolute; */
-    /* z-index: 1; */
-    /* left: 15%; */
     border-left: 20px solid #1D84D7; 
 }
 
@@ -68,8 +57,6 @@ body{
     padding-left: 1%;
     padding-right: 2%;
     height: 100%;
-    /* left: 9.7%; */
-    /* top: 5.39%;
 
     /* Helper */
 
@@ -81,43 +68,15 @@ body{
 
 }
 .nav-text {
-    position: absolute;
-    padding-left: 5%;
-    padding-right: 3%;
-    height: 100%;
-    /* left: 9.7%; */
-    /* top: 5.39%;
-
-    /* Helper */
-
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 38px;
-    /* identical to box height */
-
-
-    /* light blue */
-
-    color: #4ABDF0;
+/* refactor things */
 }
 
-/* #second-separator{
-    z-index: 1;
-    position: absolute;
-    left: 19.6%;
-    border-left: 20px solid #d7861d; 
-} */
 
 #nav-lesson-title {
     float: left;
     padding-left: 1%;
-    
     height: 100%;
-    /* left: 9.7%; */
-    /* top: 5.39%;
-
+    
     /* Helper */
 
     font-family: "Poppins";
@@ -129,9 +88,137 @@ body{
 }
 
 #profile-link {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    left: 97.5%;
-    top: 17.5%;
+    transition-duration: .2s;
+    float: right;
+    height: 100%;
+    margin: 7px 10px 0 0;
+    /* width: 23px; */
+    /* padding-right: 1%; */
+}
+
+.utility-links {
+    color: #4ABDF0;
+    float: right;
+    padding-right: 2%;
+}
+
+.utility-icon {
+    padding-top: 8%;
+    float: left;
+}
+
+#help-icon {
+    padding-top: 11%;
+}
+
+.utility-text {
+    padding-top: 11%;
+    padding-left: 7px;
+    float: right;
+}
+
+#help-text {
+    padding-top: 20%;
+}
+
+#settings-text {
+    padding-top: 14%;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-open{
+    transition-duration: .2s;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .dropdown-content a:hover {background-color: #1D84D7;}
+
+    
+    /* .dropdown:hover #nav-icon {background-color: #3e8e41;} */
+    
+    
+
+    .dropdown-content {
+        clear: both;
+        float: right;
+        margin-right: 1%;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    #nav-icons:hover .dropdown-content {display: block;}
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 18px;
+    }
+
+    
+    .utility-text{
+        line-height: 25px;
+    }
+
+    .utility-links {
+        display: none;
+    }
+
+    .utility-icon {
+        float: left;
+        padding-right: 4px;
+        padding-top: 0;
+    }
+
+    #help-icon {
+        padding-left: 1px;
+        padding-top: 0;
+    }
+
+    #dropdown-crypto-icon {
+        padding-left: 3px;
+    }
+
+    #dropdown-crypto-text {
+        line-height: 23px;
+        padding-left: 4px;
+    }
+
+    
+ 
+}
+
+@media screen and (max-width: 490px) {
+    #nav-logo-image {
+        padding-right: 10%;
+        margin: 3px -52px 0 4%;
+    }
+
+    #nav-unit-title {
+        text-align: center;
+        width: 95px;
+        padding-left: 3px;        
+        font-size: 14px;
+        line-height: inherit;
+    }
+
+    #nav-lesson-title {
+        text-align: center;
+        padding-left: 3px;
+        font-size: 14px;
+    }
+
+
 }
