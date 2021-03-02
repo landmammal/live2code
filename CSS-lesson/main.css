@@ -7,6 +7,8 @@ body{
     margin: 0;
 }
 
+/* lesson navigation */
+
 .lesson-nav {
     float: right;
     height: 40px;
@@ -26,7 +28,6 @@ body{
     padding-right: 10%;
     margin: 3% 0 0 4%;
 }
-
 
 .triangle{    
     width: 0;
@@ -57,43 +58,30 @@ body{
     padding-left: 1%;
     padding-right: 2%;
     height: 100%;
-
-    /* Helper */
-
+}
+.nav-text {
     font-family: "Poppins";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 38px;
-
 }
-.nav-text {
-/* refactor things */
-}
-
 
 #nav-lesson-title {
     float: left;
     padding-left: 1%;
     height: 100%;
-    
-    /* Helper */
-
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 38px;
     color: #4ABDF0;
 }
+
+
+/* lesson navigation links */
 
 #profile-link {
     transition-duration: .2s;
     float: right;
     height: 100%;
     margin: 7px 10px 0 0;
-    /* width: 23px; */
-    /* padding-right: 1%; */
 }
 
 .utility-links {
@@ -125,6 +113,9 @@ body{
     padding-top: 14%;
 }
 
+
+/* dropdown styles and transformations */
+
 .dropdown-content {
     display: none;
 }
@@ -139,15 +130,15 @@ body{
     transform: rotate(45deg);
 }
 
+/*************************
+     Tablet Responsive 
+**************************/
 
 @media screen and (max-width: 768px) {
     
     .dropdown-content a:hover {background-color: #1D84D7;}
-
     
-    /* .dropdown:hover #nav-icon {background-color: #3e8e41;} */
-    
-    
+    #nav-icons:hover .dropdown-content {display: block;}
 
     .dropdown-content {
         clear: both;
@@ -157,7 +148,6 @@ body{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
-    #nav-icons:hover .dropdown-content {display: block;}
 
     .dropdown-content a {
       color: black;
@@ -167,7 +157,6 @@ body{
       font-size: 18px;
     }
 
-    
     .utility-text{
         line-height: 25px;
     }
@@ -195,10 +184,11 @@ body{
         line-height: 23px;
         padding-left: 4px;
     }
-
-    
- 
 }
+
+/*************************
+     Mobil Responsive 
+**************************/
 
 @media screen and (max-width: 490px) {
     #nav-logo-image {
@@ -219,6 +209,4 @@ body{
         padding-left: 3px;
         font-size: 14px;
     }
-
-
 }
